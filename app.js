@@ -1,6 +1,6 @@
 const decrease = require("./notes");
 const yargs = require("yargs");
-
+const notes = require("./notes");
 const chalk = require("chalk");
 
 console.log(yargs.argv);
@@ -16,6 +16,7 @@ yargs.command({
     },
   },
   handler: function (argv) {
+    notes.addNote(argv.title, argv.body);
     console.log("Adding a note", argv);
   },
 });
