@@ -1,4 +1,5 @@
 const fs = require("fs");
+
 const getNotes = () => {
   let text = "Your notes ...";
 
@@ -14,6 +15,7 @@ const addNote = (title, body) => {
   });
   saveNotes(notes);
 };
+console.log("Hellooo");
 
 const saveNotes = () => {
   const dataJSON = JSON.stringify(notes);
@@ -26,6 +28,7 @@ const loadNotes = () => {
     const dataJSON = dataBuffer.toString();
     return JSON.parse(dataJSON);
   } catch (error) {
+    console.log(error);
     return [];
   }
 };
