@@ -1,10 +1,10 @@
 const fs = require("fs");
 
-// const book = {
-//   title: "Ego is the enemy",
-//   author: "Ryan Holiday",
-// };
-// console.log(book);
+const book = {
+  title: "Ego is the enemy",
+  author: "Ryan Holiday",
+};
+console.log(book);
 
 // bookJSON = JSON.stringify(book);
 // // console.log(bookJSON, "stringfy");
